@@ -1,8 +1,8 @@
 # Short Notes on MISRA C Rulesa
 
-These notes come from a review of the document [MISRA-C:2004 - Guidelines for
-the use of the C language in critical systems](./ebook/misra-c-2004.pdf) and 
-an attempt to oversimplify the "rules" for quick ingestion. 
+These notes come from a review of the document [MISRA-C:2004 - Guidelines for 
+the use of the C language in critical systems](./resources/ebook/misra-c-2004.pdf) 
+and an attempt to oversimplify the "rules" for quick ingestion. 
 
 ## Environment
 
@@ -110,3 +110,10 @@ index values!) for clarity.
 ### Rule 5.4
 **REQUIRED** A *tag* of a `struct` or `union` must have a unique name (aka
 *identifier*).
+
+### Rule 5.5
+**Advised** No object or function identifier with static storage duration should
+be reused.
+
+`Get clarity here`
+
