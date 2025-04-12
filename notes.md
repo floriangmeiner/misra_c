@@ -55,4 +55,43 @@ need to be exluded from compilation. (e.g. `#ifdef` `#endif`)
 
 
 ### Rule 3.2
-**REQUIRED** 
+**REQUIRED** Document the character set and encoding used. 
+
+
+### Rule 3.3
+**Advised** Document the implementation of integer division used by the chosen 
+compiler. 
+
+
+### Rule 3.4
+**REQUIRED** Document *and* explain all uses of the `#pragma` directive. 
+
+
+### Rule 3.5
+**REQUIRED** If used, document that implementation-defined behaviour and packing
+of bitfields. 
+
+
+### Rule 3.6
+**REQUIRED** All libraries using in *production code* shall be written to comply
+with MISRA-C and shall be appropriately validated. 
+
+
+## Character Set
+
+### Rule 4.1
+**REQUIRED** Only ISO C standard escape sequences shall be used. 
+
+
+### Rule 4.2
+**REQUIRED** Trigraphs shall not be used. (e.g. `??=`, `??/`, `??'`, `??(`, etc)
+
+
+## Identifiers
+
+### Rule 5.1
+**REQUIRED** Identifiers (internal and external) shall not rely on the 
+significance of more that 31 characters.
+
+`LOOK INTO WHAT THIS MEANS`
+
