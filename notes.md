@@ -1,8 +1,10 @@
-# Short Notes on MISRA C Rulesa
+# Short Notes on MISRA C Rules
 
 These notes come from a review of the document [MISRA-C:2004 - Guidelines for 
 the use of the C language in critical systems](./resources/ebook/misra-c-2004.pdf) 
 and an attempt to oversimplify the "rules" for quick ingestion. 
+
+For those without this PDF, this is the October 2004 MISRA-C:2004 version.
 
 ## Environment
 
@@ -117,3 +119,20 @@ be reused.
 
 `Get clarity here`
 
+
+### Rule 5.6
+**Advised** No identifier in one name space should have the same spelling as an
+identifier in another name space, with the exception of `struct` members and
+`union` members.
+
+`Simplify this`
+
+
+### Rule 5.7
+**Advised** No identifier should be reused. 
+
+
+## Types
+
+### Rule 6.1
+**REQUIRED** 
