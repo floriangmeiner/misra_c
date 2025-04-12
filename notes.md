@@ -90,8 +90,23 @@ with MISRA-C and shall be appropriately validated.
 ## Identifiers
 
 ### Rule 5.1
-**REQUIRED** Identifiers (internal and external) shall not rely on the 
-significance of more that 31 characters.
+**REQUIRED** All names should be less than 31 characters in length. 
+> Identifiers (internal and external) shall not rely on the 
+> significance of more that 31 characters.
 
-`LOOK INTO WHAT THIS MEANS`
 
+### Rule 5.2
+**REQUIRED** Identifiers in an inner scope, must have a different name from 
+identifiers in the outer scope. 
+
+*aka* *Always* use unique variable names, **EVERYWHERE** (including for-loop
+index values!) for clarity. 
+
+
+### Rule 5.3
+**REQUIRED** A `typedef` name must have a unique name (aka *identifier*).
+
+
+### Rule 5.4
+**REQUIRED** A *tag* of a `struct` or `union` must have a unique name (aka
+*identifier*).
