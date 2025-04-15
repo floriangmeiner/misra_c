@@ -153,3 +153,6 @@ basic number types.
 **REQUIRED** Bit fields must only be defined to be of type `unsigned int` or 
 `signed int`. 
 
+
+### Rule 6.5
+**REQUIRED** Bit fields of `signed` type must be at least 2-bits long.
