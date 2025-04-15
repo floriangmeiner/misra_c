@@ -13,7 +13,7 @@ For those without this PDF, this is the October 2004 MISRA-C:2004 version.
 
 
 ### Rule 1.2:
-**REQUIRED** Don't really on *UNDEFINED* or *UNSPECIFIED* behaviour.
+**REQUIRED** Don't rely on *UNDEFINED* or *UNSPECIFIED* behaviour.
 
 
 ### Rule 1.3:
@@ -135,4 +135,21 @@ identifier in another name space, with the exception of `struct` members and
 ## Types
 
 ### Rule 6.1
-**REQUIRED** 
+**REQUIRED** The "plain" `char` data type must only store characters.
+
+
+### Rule 6.2
+**REQUIRED** The `unsigned char` and `signed char` data type must only store
+numeric values. The ISO (POSIX) typedefs  include these.
+
+### Rule 6.3
+**Advised** Use `typedef` types that indicate size and signedness instead of
+basic number types.  
+
+*aka* Use `uint8_t`,  `int8_t`, etc. The are found in `stdint.h`.
+
+
+### Rule 6.4
+**REQUIRED** Bit fields must only be defined to be of type `unsigned int` or 
+`signed int`. 
+
